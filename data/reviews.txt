@@ -1,0 +1,6 @@
+r01|v01|c01|5|Captured every moment perfectly. Highly recommended!
+r02|v02|c02|5|Our guests are still talking about the food.
+r03|v03|c01|4|Gorgeous bouquets and delivered right on time.
+r04|v04|c02|5|Stunning hall and a very helpful team.
+r05|v05|c01|4|Kept the dance floor full all night.
+r06|v01|c02|5|Worth every rupee.

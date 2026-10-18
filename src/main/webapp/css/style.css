@@ -1,0 +1,46 @@
+:root{--plum:#2b1d26;--rose:#9c3d54;--gold:#c9a24a;--cream:#fbf6f1}
+body{background:var(--cream) url('../images/pattern.svg');color:var(--plum);font-family:'Inter',Arial,sans-serif}
+h1,h2,h3,.brand{font-family:'Playfair Display',Georgia,serif}
+.topbar{background:var(--plum);padding:14px 0}
+.topbar .brand{color:var(--gold);font-size:1.5rem;text-decoration:none}
+.topbar .links a{color:#fbf6f1;text-decoration:none;margin-left:18px;opacity:.85}
+.topbar .links a:hover{opacity:1;color:var(--gold)}
+.hero{background:#2b1d26 url('../images/hero.svg') center/cover;color:#fff;padding:90px 0}
+.hero h1{font-size:2.8rem}.hero p{opacity:.85;margin:0}
+.tile{display:block;background:#fff;border:1px solid #eadfd6;border-radius:16px;padding:24px;text-decoration:none;color:var(--plum);height:100%;transition:.15s}
+.tile:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(43,29,38,.12)}
+.tile .num{font-size:2.4rem;color:var(--rose);font-family:'Playfair Display',serif}
+.btn-rose{background:var(--rose);color:#fff;border:0}.btn-rose:hover{background:#82304a;color:#fff}
+.panel{background:#fff;border:1px solid #eadfd6;border-radius:16px;padding:24px}
+.table thead th{background:var(--plum);color:#fff;font-weight:500;border:0}
+.badge-s{padding:4px 12px;border-radius:99px;font-size:.85rem;background:#eee}
+.badge-Confirmed{background:#d6efdc;color:#1d6b35}.badge-Pending{background:#fbe9c4;color:#8a5d00}.badge-Cancelled{background:#f6d4d9;color:#9c2b3d}
+.auth{max-width:440px;margin:60px auto}
+.login-bg{background:#2b1d26 url('../images/login.svg') center/cover fixed;min-height:100vh;padding-top:20px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
+@keyframes pan{from{background-position:0% 50%}to{background-position:100% 50%}}
+@keyframes drift{from{background-position:0 0}to{background-position:140px 140px}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(138,93,0,.35)}50%{box-shadow:0 0 0 8px rgba(138,93,0,0)}}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+body{animation:pageIn .5s ease,drift 60s linear infinite}
+body.leaving{opacity:0;transition:opacity .22s}
+.hero{background-size:130% auto;animation:pan 24s ease-in-out infinite alternate}
+.login-bg{background-size:130% auto;animation:pageIn .6s ease,pan 30s ease-in-out infinite alternate}
+.hero h1{animation:fadeUp .8s .1s ease both}.hero p{animation:fadeUp .8s .3s ease both}
+.panel,.alert{animation:fadeUp .6s ease both}
+.auth{animation:fadeUp .8s .2s ease both}
+.row>div{animation:fadeUp .6s ease both}
+.row>div:nth-child(2){animation-delay:.08s}.row>div:nth-child(3){animation-delay:.16s}.row>div:nth-child(4){animation-delay:.24s}.row>div:nth-child(5){animation-delay:.32s}.row>div:nth-child(6){animation-delay:.4s}
+.table tbody tr{animation:fadeUp .45s ease both;transition:background .2s}
+.table tbody tr:nth-child(2){animation-delay:.05s}.table tbody tr:nth-child(3){animation-delay:.1s}.table tbody tr:nth-child(4){animation-delay:.15s}.table tbody tr:nth-child(5){animation-delay:.2s}.table tbody tr:nth-child(6){animation-delay:.25s}.table tbody tr:nth-child(7){animation-delay:.3s}.table tbody tr:nth-child(8){animation-delay:.35s}
+.table>tbody>tr:hover>*{background-color:#fbeef1}
+.btn{transition:transform .15s,box-shadow .15s,background .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(156,61,84,.28)}.btn:active{transform:none}
+.topbar .links a{position:relative;transition:color .2s,opacity .2s}
+.topbar .links a::after{content:'';position:absolute;left:0;bottom:-4px;width:100%;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .25s}
+.topbar .links a:hover::after{transform:scaleX(1)}
+.brand{display:inline-block}.brand:hover{animation:beat 1s infinite}
+.form-control,.form-select{transition:border-color .2s,box-shadow .2s}
+.form-control:focus,.form-select:focus{border-color:var(--rose);box-shadow:0 0 0 .2rem rgba(156,61,84,.2)}
+.badge-Pending{animation:pulse 2s infinite}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}

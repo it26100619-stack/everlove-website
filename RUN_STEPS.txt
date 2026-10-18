@@ -1,0 +1,8 @@
+HOW TO RUN (IntelliJ)
+1. File > Open > choose the pom.xml file > Open as Project > Trust Project.
+2. Wait until the bottom bar stops loading.
+3. Open the Maven panel on the right: wedding > Plugins > jetty > double-click jetty:run.
+4. Wait for the message "Started Jetty Server".
+5. Open http://localhost:8081 in the browser.
+6. Login: admin@wd44.lk / admin123
+To stop: click the red square in the Run panel.

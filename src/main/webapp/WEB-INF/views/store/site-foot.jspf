@@ -1,0 +1,6 @@
+<footer class="foot"><div class="container"><div class="row g-4">
+<div class="col-md-5"><span class="logo-badge"><img src="${ctx}/images/logo.png" alt="Everlove" style="height:74px"></span><p>Plan your wedding and book trusted vendors in one place. Photographers, caterers, florists, venues, DJs and decorators across Sri Lanka.</p></div>
+<div class="col-md-3"><h6 class="text-white">Explore</h6><a href="${ctx}/catalog">All vendors</a><a href="${ctx}/site#how">How it works</a><a href="${ctx}/my-bookings">My bookings</a><a href="${ctx}/my-wedding">My wedding planner</a></div>
+<div class="col-md-4"><h6 class="text-white">Contact</h6><p class="mb-1"><i class="bi bi-envelope"></i> hello@everlove.lk</p><p class="mb-1"><i class="bi bi-telephone"></i> +94 77 000 0000</p><p><i class="bi bi-geo-alt"></i> Colombo, Sri Lanka</p></div></div>
+<hr><p class="small mb-0">&copy; 2026 Everlove Weddings. All rights reserved.</p></div></footer>
+<script src="${ctx}/js/site.js"></script>

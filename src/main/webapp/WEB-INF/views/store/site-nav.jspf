@@ -1,0 +1,8 @@
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<nav class="snav ${navClass}"><div class="container d-flex align-items-center justify-content-between">
+<a class="brand-s" href="${ctx}/site"><img class="logo" src="${ctx}/images/logo.png" alt="Everlove"></a>
+<div class="d-none d-md-block"><a class="l" href="${ctx}/site">Home</a><a class="l" href="${ctx}/catalog">Vendors</a><a class="l" href="${ctx}/site#how">How it works</a>
+<c:if test="${not empty sessionScope.user and not sessionScope.user.admin}"><a class="l" href="${ctx}/my-bookings">My bookings</a><a class="l" href="${ctx}/my-wedding">My wedding</a></c:if>
+<c:if test="${sessionScope.user.admin}"><a class="l" href="${ctx}/home">Admin panel</a></c:if></div>
+<div><c:choose><c:when test="${empty sessionScope.user}"><a class="l" href="${ctx}/login">Log in</a><a class="btn-main" href="${ctx}/register">Sign up</a></c:when>
+<c:otherwise><span class="me-3 small d-none d-md-inline">Hi, <c:out value="${sessionScope.user.name}"/></span><a class="btn-line" href="${ctx}/logout">Log out</a></c:otherwise></c:choose></div></div></nav>

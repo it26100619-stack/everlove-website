@@ -1,0 +1,12 @@
+v01|Lumina Photography|Photographer|Colombo|85000.00
+v02|Royal Caterers|Caterer|Negombo|3500.00
+v03|Bloom Florals|Florist|Kandy|45000.00
+v04|Grand Orchid Hall|Venue|Colombo|250000.00
+v05|Rhythm and Beats DJ|DJ|Galle|60000.00
+v06|Elegant Decor Studio|Decorator|Colombo|120000.00
+v07|Golden Frame Studios|Photographer|Kandy|95000.00
+v08|Spice Garden Catering|Caterer|Galle|4200.00
+v09|Petal and Stem|Florist|Negombo|38000.00
+v10|Seaside Pavilion|Venue|Negombo|310000.00
+v11|Sunset Sounds|DJ|Colombo|55000.00
+v12|Dreamscape Decor|Decorator|Kandy|98000.00
